@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>API Sample Application</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+		<!-- Custom CSS -->
+		<link href="css/f9sample.css" rel="stylesheet"/>
+		
+	</head>
+	<body>
+		<main id="clientPage">
+		<div class="container">
+			<div class="page-header">
+			  <h1>API Sample App <small>Login and Metadata access</small></h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Authentication Configuration</div>
+					  <div class="panel-body">
+					    <form id="authform">
+			
+							<label for="agentun">Agent Username............: </label>
+							<input id="agentun" name="agentun" type="text" size="40"/></br>
+							<label for="agentpwd">Agent Password............: </label>
+							<input id="agentpwd" name="agentpwd" type="password" size="25"/></br>
+							<label for="f9apiuri">API URL...............https://</label>
+							<input id="f9apiuri" name="f9apiuri" type="text" size="40"/></br>
+							<br>
+							<input type="button" class="btn btn-primary" name="btnAuthenticate" id="btnAuthenticate" value="Authenticate" />
+							<input type="button" class="btn btn-primary" name="btnGetMetadata" id="btnGetMetadata" value="Get Metadata" />
+							<input type="button" class="btn btn-danger" name="btnLogout" id="btnLogout" value="Logout" />
+							
+						</form>
+					  </div>
+					</div>
+					
+				</div>
+				<div class="col-sm-12">
+					<div class="panel panel-default">
+					  <div class="panel-heading">Message Log</div>
+					  <div class="panel-body">
+					    <div class="logContainer">
+					
+					    </div>
+					  </div>
+				</div>
+			</div>
+		</div>
+	
+		</main>
+		
+		
+		
+		<footer>
+		<a href="files/ApiBasicSample.zip" id="downloadlink" target="_blank">Download the source files here...</a>
+		<br>
+		<br>
+		(c)2016 Five9 Custom Solutions
+		</footer>
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/five9restapi.js"></script>
+		<script src="js/wschannel.js"></script>
+		<script src="js/apisample-controller.js"></script>
+	</body>
+	
+	<script>
+    	$(document).ready(function() {
+    		apisampleController.init($('#clientPage'));
+    		five9restapi.init($('#clientPage'));
+    	});
+    </script>
+</html>

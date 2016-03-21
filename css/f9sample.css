@@ -1,0 +1,172 @@
+@CHARSET "UTF-8";
+
+body{
+	margin:0;
+	background:#999;
+	font-family:arial;
+}
+
+header h1 {
+	color:#555;
+	text-align:center;
+}
+
+header h2 {
+	text-align: center;
+	color:#555;
+	width: 600px;
+  	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+footer {
+	clear: both;
+	color:white;
+	text-align:center;
+	padding: 50px 0 0 0;
+}
+
+label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right:15px;
+}
+
+#downloadlink {
+	clear: both;
+	color:blue;
+	font-size:large;
+	text-decoration: underline;
+	text-align:center;
+	padding: 50px 0 0 0;
+}
+
+.optionsctrl {
+	width: 600px ;
+  	margin-left: auto;
+  	text-align:left;
+  	padding: 20px 0;
+}
+
+.parentctrl {
+	width: 600px ;
+  	margin-left: auto ;
+  	margin-right: auto ;
+  	padding: 20px 0;
+}
+
+.parentctrl button {
+	display: block;
+	width: 250px;
+	margin-top: 70px;
+  	margin-left: auto ;
+  	margin-right: auto ;
+}
+
+.parentctrl input {
+	width: 175px;
+}
+
+#authform {
+	width: 600px ;
+  	margin-left: auto ;
+  	margin-right: auto ;
+  	padding: 20px 0;
+}
+
+.configbtn {
+	width: 250px;
+	margin: 0 auto;
+}
+.logFrame {
+	width: 600px ;
+	height: 200px;
+    overflow: auto;
+  	margin-left: auto ;
+  	margin-right: auto ;
+  	padding: 10px 0;
+  	border-style: solid;
+    border-width: 5px;
+    border-color: #666;
+}
+
+.logContainer {
+	width: 700px ;
+	height: 300px;
+    overflow: auto;
+  	margin-left: auto ;
+  	margin-right: auto ;
+  	padding: 10px 0;
+  	border-style: solid;
+    border-width: 2px;
+    border-color: #666;
+}
+
+#cliframe {
+	margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 220px;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #666;
+    background: #0099ff;
+}
+
+#cliframe #callbuttons {
+	float: left;
+	display: block;
+	width: 100px;
+	height: 200px;
+	margin: 20px;
+}
+
+#cliframe button {
+	width: 200px;
+	height: 10px;
+	padding: 20px;
+	border-radius:12px;
+	font-family:arial;
+	font-size:17px;
+}
+
+#cliframe #dialpad {
+	float: right;
+	width: 200px;
+	height: 160px;
+	margin: 10px;
+	padding: 20px;
+	background-color: #0099ff;
+	position: relative;
+}
+
+#cliframe #dialpad button {
+	float: left;
+	width: 30px;
+}
+
+#cliframe #dialpad .dtmfButton {
+	background-color:#44c767;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	margin: 2px;
+}
+#cliframe #dialpad .dtmfButton:hover {
+	background-color:#5cbf2a;
+}
+
+#dialpad .dtmfButton:active {
+	position:relative;
+	top:1px;
+}
